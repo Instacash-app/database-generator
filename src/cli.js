@@ -1,3 +1,4 @@
+#!/usr/bin / env node
 const rootDirectory = process.cwd();
 const configurationFile = rootDirectory + '/db-generator.config';
 const configuration = require(configurationFile).default;
