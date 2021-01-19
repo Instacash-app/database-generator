@@ -1,0 +1,21 @@
+{
+  "name": "db-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node src/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mysql2": "^2.2.5"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.6"
+  },
+  "bin": {
+    "dbg-generate": "./src/cli.js"
+  }
+}

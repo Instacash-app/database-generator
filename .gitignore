@@ -1,0 +1,11 @@
+#node
+node_modules
+
+#IDE
+.idea
+
+#Testing
+output
+db-generator.config.js
+
+db-connection.js
