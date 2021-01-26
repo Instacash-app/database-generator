@@ -38,7 +38,11 @@ class TemplateManager {
   }
 
   async createFile(templateHandler, data, detail) {
-    const output = templateHandler(data);
+    let transform = detail.transform;
+    if (!transform) {
+      transform = input => input;
+    }
+    const output = templateHandler(transform(data));
 
     let fileName = detail.scope === 'all' ?
       detail.fileName() :detail.fileName(data);
